@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeaderView" customModule="LianAnDai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="365"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KI3-0E-7N2" customClass="FWCycleScrollView" customModule="FWCycleScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="Sco-RP-GT3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roo-xr-SrA">
+                    <rect key="frame" x="0.0" y="178" width="375" height="85"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WU6-bo-bGC">
+                            <rect key="frame" x="104" y="0.0" width="104" height="85"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="104" id="hO4-lL-QSf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-78" minY="56" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="12" minY="1" maxX="29" maxY="18"/>
+                            <state key="normal" title="热门活动" image="home_digItem">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="remenhuodong:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jpa-qX-2Aw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY8-FQ-zLo">
+                            <rect key="frame" x="208" y="0.0" width="104" height="85"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="104" id="yH2-yg-1qJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-95" minY="56" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-2" minY="1" maxX="33" maxY="18"/>
+                            <state key="normal" title="邀请好友" image="home_icon_wajinkuang">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="yaoqinghaoyou:" destination="iN0-l3-epB" eventType="touchUpInside" id="Hvv-Zc-fSi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEz-hZ-78r">
+                            <rect key="frame" x="271" y="0.0" width="104" height="85"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="104" id="CT8-MI-Xgf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-40" minY="56" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="12" minY="1" maxX="-50" maxY="18"/>
+                            <state key="normal" title="特价专区" image="home_icon_activity">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="tejiazhuanqu:" destination="iN0-l3-epB" eventType="touchUpInside" id="2tT-wD-FUy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-rq-0bz">
+                            <rect key="frame" x="0.0" y="0.0" width="104" height="85"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="104" id="aqn-rG-Kj0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-58" minY="56" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="16" minY="1" maxX="14" maxY="18"/>
+                            <state key="normal" title="平台介绍" image="home_inviteItem">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="pingtaijiesao:" destination="iN0-l3-epB" eventType="touchUpInside" id="rnz-B8-Akl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qEz-hZ-78r" firstAttribute="width" secondItem="BUr-rq-0bz" secondAttribute="width" id="5Cy-KF-7Q6"/>
+                        <constraint firstItem="vY8-FQ-zLo" firstAttribute="height" secondItem="BUr-rq-0bz" secondAttribute="height" id="Cqw-Cx-KSi"/>
+                        <constraint firstAttribute="bottom" secondItem="BUr-rq-0bz" secondAttribute="bottom" id="DIT-6S-iNO"/>
+                        <constraint firstItem="qEz-hZ-78r" firstAttribute="centerY" secondItem="BUr-rq-0bz" secondAttribute="centerY" id="Ddw-vZ-ptk"/>
+                        <constraint firstItem="vY8-FQ-zLo" firstAttribute="width" secondItem="BUr-rq-0bz" secondAttribute="width" id="FLZ-b9-eXN"/>
+                        <constraint firstAttribute="trailing" secondItem="qEz-hZ-78r" secondAttribute="trailing" id="Ieb-Hj-HMO"/>
+                        <constraint firstItem="qEz-hZ-78r" firstAttribute="height" secondItem="BUr-rq-0bz" secondAttribute="height" id="JXz-qf-BzA"/>
+                        <constraint firstItem="BUr-rq-0bz" firstAttribute="top" secondItem="roo-xr-SrA" secondAttribute="top" id="K5G-lm-zXh"/>
+                        <constraint firstItem="BUr-rq-0bz" firstAttribute="leading" secondItem="roo-xr-SrA" secondAttribute="leading" id="Seu-ws-MwO"/>
+                        <constraint firstItem="vY8-FQ-zLo" firstAttribute="leading" secondItem="WU6-bo-bGC" secondAttribute="trailing" id="UOA-WT-EGh"/>
+                        <constraint firstItem="WU6-bo-bGC" firstAttribute="centerY" secondItem="BUr-rq-0bz" secondAttribute="centerY" id="ase-eQ-Lf6"/>
+                        <constraint firstAttribute="height" constant="85" id="h3m-fv-5C4"/>
+                        <constraint firstItem="WU6-bo-bGC" firstAttribute="width" secondItem="BUr-rq-0bz" secondAttribute="width" id="k8H-oS-CcK"/>
+                        <constraint firstItem="WU6-bo-bGC" firstAttribute="leading" secondItem="BUr-rq-0bz" secondAttribute="trailing" id="pID-Go-hfx"/>
+                        <constraint firstItem="vY8-FQ-zLo" firstAttribute="centerY" secondItem="BUr-rq-0bz" secondAttribute="centerY" id="vcS-BF-54H"/>
+                        <constraint firstItem="WU6-bo-bGC" firstAttribute="height" secondItem="BUr-rq-0bz" secondAttribute="height" id="yRq-hZ-lYO"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="specious_goods_newers" translatesAutoresizingMaskIntoConstraints="NO" id="vUT-B9-unJ">
+                    <rect key="frame" x="0.0" y="271" width="375" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="xS4-qe-3Sx"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="roo-xr-SrA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1OF-7K-ODG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KI3-0E-7N2" secondAttribute="trailing" id="4yV-8E-W8d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vUT-B9-unJ" secondAttribute="trailing" id="6Vb-4q-fi0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="roo-xr-SrA" secondAttribute="trailing" id="6wh-qe-8ep"/>
+                <constraint firstItem="KI3-0E-7N2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GSY-9M-wPf"/>
+                <constraint firstItem="roo-xr-SrA" firstAttribute="top" secondItem="KI3-0E-7N2" secondAttribute="bottom" constant="8" id="N7A-QN-jCL"/>
+                <constraint firstItem="KI3-0E-7N2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="asy-jE-PRJ"/>
+                <constraint firstItem="vUT-B9-unJ" firstAttribute="top" secondItem="roo-xr-SrA" secondAttribute="bottom" constant="8" id="bOe-J6-zpu"/>
+                <constraint firstItem="vUT-B9-unJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="w6g-TY-7iH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activityImageView" destination="vUT-B9-unJ" id="ZEB-xj-YDC"/>
+                <outlet property="cyckeScrollowView" destination="KI3-0E-7N2" id="Z62-Ri-wQc"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="-101.19940029985008"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_digItem" width="46" height="46"/>
+        <image name="home_icon_activity" width="46" height="46"/>
+        <image name="home_icon_wajinkuang" width="46" height="46"/>
+        <image name="home_inviteItem" width="46" height="46"/>
+        <image name="specious_goods_newers" width="60" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeFooterView" customModule="LianAnDai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gu1-dm-cAs">
+                    <rect key="frame" x="0.0" y="0.0" width="411" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_activity" translatesAutoresizingMaskIntoConstraints="NO" id="MJk-y5-8En">
+                            <rect key="frame" x="10" y="10" width="391" height="130"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="5Sd-8O-v0B"/>
+                        <constraint firstAttribute="trailing" secondItem="MJk-y5-8En" secondAttribute="trailing" constant="10" id="CJp-5N-pZ2"/>
+                        <constraint firstItem="MJk-y5-8En" firstAttribute="top" secondItem="Gu1-dm-cAs" secondAttribute="top" constant="10" id="H1z-ga-FMb"/>
+                        <constraint firstItem="MJk-y5-8En" firstAttribute="leading" secondItem="Gu1-dm-cAs" secondAttribute="leading" constant="10" id="MvK-hP-bY6"/>
+                        <constraint firstAttribute="bottom" secondItem="MJk-y5-8En" secondAttribute="bottom" constant="10" id="Ric-8V-gCx"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_aliyun" translatesAutoresizingMaskIntoConstraints="NO" id="AzT-eU-sAD">
+                    <rect key="frame" x="167.5" y="175" width="76" height="22"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="用户信息加密存储保障您的隐私安全" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlD-IW-shA">
+                    <rect key="frame" x="91.5" y="211" width="228.5" height="19"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市场有风险，投资需谨慎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtW-VX-Iyj">
+                    <rect key="frame" x="132.5" y="244" width="146" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.97947880993150682" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gu1-dm-cAs" secondAttribute="trailing" id="79k-cO-ZpZ"/>
+                <constraint firstItem="YtW-VX-Iyj" firstAttribute="top" secondItem="BlD-IW-shA" secondAttribute="bottom" constant="14" id="Epn-vr-88C"/>
+                <constraint firstItem="AzT-eU-sAD" firstAttribute="centerX" secondItem="Gu1-dm-cAs" secondAttribute="centerX" id="FDv-Ch-0LK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YtW-VX-Iyj" secondAttribute="bottom" constant="17" id="I9x-n4-6je"/>
+                <constraint firstItem="AzT-eU-sAD" firstAttribute="top" secondItem="Gu1-dm-cAs" secondAttribute="bottom" constant="25" id="Maw-Ko-LRJ"/>
+                <constraint firstItem="Gu1-dm-cAs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Qpq-b8-Cek"/>
+                <constraint firstItem="BlD-IW-shA" firstAttribute="centerX" secondItem="AzT-eU-sAD" secondAttribute="centerX" id="YDq-rB-GIf"/>
+                <constraint firstItem="YtW-VX-Iyj" firstAttribute="centerX" secondItem="BlD-IW-shA" secondAttribute="centerX" id="nrc-eB-Znd"/>
+                <constraint firstItem="Gu1-dm-cAs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="plz-Ay-Iid"/>
+                <constraint firstItem="BlD-IW-shA" firstAttribute="top" secondItem="AzT-eU-sAD" secondAttribute="bottom" constant="14" id="q6C-wa-KWx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="167.19999999999999" y="347.67616191904051"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_activity" width="343.5" height="125"/>
+        <image name="mine_aliyun" width="76" height="22"/>
+    </resources>
+</document>

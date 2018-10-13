@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6BY-9A-M7a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我-->
+        <scene sceneID="9NX-Bu-u4X">
+            <objects>
+                <navigationController id="6BY-9A-M7a" customClass="GoldCatNavigationController" customModule="LianAnDai" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" image="mine_normal" selectedImage="mine_highlight" id="bpR-tB-1l0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CeA-Fq-8sv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="h03-im-hgD" kind="relationship" relationship="rootViewController" id="dCy-9O-8sq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cv8-8P-3fJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="950"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="FJf-OO-NRR">
+            <objects>
+                <viewController id="h03-im-hgD" customClass="ProfileViewController" customModule="LianAnDai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPO-eZ-0qm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5mE-OJ-OFC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i3m-rm-SBp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9U-U6-4HF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="949"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_highlight" width="22" height="22"/>
+        <image name="mine_normal" width="22" height="22"/>
+    </resources>
+</document>

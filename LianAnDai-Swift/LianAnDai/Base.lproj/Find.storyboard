@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vee-Zr-JhW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--发现-->
+        <scene sceneID="ISs-4r-bff">
+            <objects>
+                <navigationController id="vee-Zr-JhW" customClass="GoldCatNavigationController" customModule="LianAnDai" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="find_normal" selectedImage="find_highlight" id="6zh-dW-jTa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lAX-4q-g6o">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QM6-ra-n0v" kind="relationship" relationship="rootViewController" id="uh0-Og-Mfd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjj-Qa-Nao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="130"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="hID-M2-nYy">
+            <objects>
+                <viewController id="QM6-ra-n0v" customClass="FindViewController" customModule="LianAnDai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tNZ-Wc-UD6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.97479666099999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9Hu-w8-UpH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="发现" id="hKu-hi-7fp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnK-XF-i8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="find_highlight" width="22" height="22"/>
+        <image name="find_normal" width="22" height="22"/>
+    </resources>
+</document>

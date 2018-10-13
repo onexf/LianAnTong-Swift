@@ -1,0 +1,6 @@
+framework module Pods_LianAnDai {
+  umbrella header "Pods-LianAnDai-umbrella.h"
+
+  export *
+  module * { export * }
+}
